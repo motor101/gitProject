@@ -2,30 +2,121 @@
 <?xml-stylesheet type="text/xsl" href="hotelsCatalog.xsl"?>
 
 <!DOCTYPE catalog SYSTEM "hotelsCatalog.dtd" [
-    <!ENTITY h1 SYSTEM "images/.jpg" NDATA jpg>
-    <!ENTITY h2 SYSTEM "images/.jpg" NDATA jpg>
-    <!ENTITY h3 SYSTEM "images/.jpg" NDATA jpg>
-    <!ENTITY h4 SYSTEM "images/.jpg" NDATA jpg>
-    <!ENTITY h5 SYSTEM "images/.jpg" NDATA jpg>
-    <!ENTITY h6 SYSTEM "images/.jpg" NDATA jpg>
-    <!ENTITY h7 SYSTEM "images/.jpg" NDATA jpg>
-    <!ENTITY h8 SYSTEM "images/.jpg" NDATA jpg>
+    <!ENTITY grandHotelBansko SYSTEM "https://s-ec.bstatic.com/images/hotel/max1024x768/193/19339554.jpg" NDATA jpg>
+    <!ENTITY kempinskiGrandArenaBansko SYSTEM "https://www.rooms.bg/photos/176642_hotel-kempinski-bansko.jpg?r=344x" NDATA jpg>
+    <!ENTITY hotelRoyalBorovets SYSTEM "https://static.deals.bg/images/1/htl//8097/-8097-69285-2-1_gal.jpg" NDATA jpg>
+    <!ENTITY hotelZdravetsVelingrad SYSTEM "https://static.pochivka.bg/bgstay.com/images/photos/3/3247/new/vip/pic_3247_1.jpg" NDATA jpg>
+    <!ENTITY hotelArte SYSTEM "https://t-ec.bstatic.com/images/hotel/max1024x768/125/125701080.jpg" NDATA jpg>
+    <!ENTITY hotelRoyal SYSTEM "http://allinclusive-pochivki.eu/upload/1-16032016131842638lw" NDATA jpg>
+    <!ENTITY hotelOrpheus SYSTEM "https://s-ec.bstatic.com/images/hotel/max1024x768/122/122968994.jpg" NDATA jpg>
 ]>
 
 <catalog>
     <reg:regions xmlns:reg="http://hotel.catalog.com/regions">
-        <reg:region id="region_1">
-            <reg:name></reg:name>
+        <reg:region id="r1">
+            <reg:name>Bansko</reg:name>
+        </reg:region>
+        <reg:region id="r2">
+            <reg:name>Pamporovo</reg:name>
+        </reg:region>
+        <reg:region id="r3">
+            <reg:name>Borovets</reg:name>
+        </reg:region>
+        <reg:region id="r4">
+            <reg:name>Velingrad</reg:name>
         </reg:region>
     </reg:regions>
     <hotels>
-        <hotel id="hotel_1" regionId="region_1">
-            <name></name>
-            <description></description>
-            <starsCategory></starsCategory>
-            <telephone></telephone>
-            <email></email>
-            <image href="h1"/>
+        <hotel id="hotel_1" regionId="r1">
+            <name>Grand hotel Bansko</name>
+            <description>Grand Hotel Bansko е луксозен хотелски комплекс с 5 звездна функционалност,
+                който предлага пълна гама услуги за пълноценна почивка или бизнес пътуване. 
+                Хотелът е ситуиран в централната част на Банско, само на 15 минути пеша от ски лифта. 
+        
+                Професионалният екип на Grand Hotel Bansko Ви гарантира първокласно обслужване и 
+                релаксираща атмосфера 24 часа в денонощието, 7 дни в седмицата.
+                Хотелът е построен и обзаведен в модерен стил, съобразен с най-високите стандарти 
+                и тенденции в дизайна, 
+                за да отговаря на изискванията и на най-претенциозните гости.</description>
+            <starsCategory>****</starsCategory>
+            <telephone>070012120</telephone>
+            <email>reservations@grandhotelbansko.bg</email>
+            <image href="grandHotelBansko"/>
         </hotel>
+        
+        <hotel id="hotel_2" regionId="r1">
+            <name>КЕМПИНСКИ ХОТЕЛ ГРАНД АРЕНА БАНСКО</name>
+            <description>Избягайте от забързаното ежедневие и опознайте красотата на девствената природа в
+                подножието на величествената Пирин планина – част от световното природно наследство на ЮНЕСКО.
+                
+                Добре дошли в Кемпински Хотел Гранд Арена Банско - оазис на комфорт и планинско
+                спокойствие в Банско, най-модерният зимен курорт на Балканите.</description>
+            <starsCategory>*****</starsCategory>
+            <telephone>+359 749 88888</telephone>
+            <email>reservations.grandarena@kempinski.com</email>
+            <image href="kempinskiGrandArenaBansko"/>
+        </hotel>
+        <hotel id="hotel_3" regionId="r2">
+            <name>Hotel Orpheus</name>
+            <description>Хотелът разполага с 260 комфортно обзаведени помещения.
+                На разположение на гостите е СПА център с отопляем вътрешен басейн с детска секция,
+                Основен ресторант, Тематичен ресторант, Скай бар, Лоби бар и Витамин бар (СПА). 
+                Предлагат се следните услуги и удобства: професионална анимация за деца и възрастни,
+                детски кът, зала с развлекателни игри, игрална зала с хазартни игри, фризьорски салон, 
+                конферентна и заседателна зала,
+                ски гардероб, ски училище,  външен паркинг и подземен гараж, Wi-Fi в целия хотел.</description>
+            <starsCategory>****</starsCategory>
+            <telephone> +359 877 115 887</telephone>
+            <email>reservations@hotel-orpheus.com</email>
+            <image href="hotelOrpheus"/>
+        </hotel>
+        <hotel id="hotel_4" regionId="r3">
+            <name>Hotel Royal Borovets</name>
+            <description>Хотел 'Роял' е открит през януари 2015 г., след цялостно реновиране на сградата.
+                
+                Хотелът е разположен в тиха и спокойна гориста местност в източната част на курорта 
+                Боровец в местността Широка поляна и само на 3 км. от кабинковия лифт. 
+                Прекрасната гледка към Рила и кристално чистият въздух са само част от предимствата на хотела.
+                Хотел "Роял" е перфектният избор за бягство от ежедневието - незабравима ски ваканция или
+                разтоварваща почивка за Вас и Вашето семейство. Хотел "Роял" посреща всеки гост с желанието 
+                да осигури един приятен престой и да увеличи положителните емоций от престоя за дълго време.</description>
+            <starsCategory>***</starsCategory>
+            <telephone>+ 359 876 55 00 10</telephone>
+            <email> hotelroql@abv.bg</email>
+            <image href="hotelRoyalBorovets"/>
+        </hotel>
+        <hotel id="hotel_5" regionId="r4">
+            <name>Hotel Zdravets - Velingrad</name>
+            <description>Хотел Здравец 4* Wellness  SPA е четиризвезден комплекс, който се намира в идеалния център на Велинград, до пешеходната зона, в близост до няколко градски парка и боровата гора.
+                Ресторантът разполага с две зали, подходящи за различни празнични поводи, както и с огромна тераса с гледка към центъра на града.
+                На разположение на гостите са още: лоби бар, кафе-градина, pool bar (през летните месеци), безплатен паркинг.
+                Хотелът предлага възможност за физическа активност във фитнес центъра, както и за забавления: тенис на маса, джаги, въздушен хокей, симулаторни игри.
+                В комплекса има общо 4 конферентни зали с капацитет от 20 до 450 места с естествено осветление и климатизация.
+                За децата е обособен специален детски кът.
+                Приемат се разплащания със следните кредитни карти: Visa, MasterCard, Maestro, Borica и American Еxpress.</description>
+            <starsCategory>****</starsCategory>
+            <telephone>+359 892 244 801</telephone>
+            <email>marketing@hotel-zdravets.com</email>
+            <image href="hotelZdravetsVelingrad"/>
+        </hotel>
+        <hotel id="hotel_6" regionId="r4">
+            <name>Arte spa and park hotel</name>
+            <description>Разположен в подножието на гората сред дивна гледка и уникална природа, в район с чист въздух и висока йонизация, Arte Spa and Park Hotel първо ще Ви грабне със своя кокетен алпийски стил и архитектурна елегантност. Миг след това ще усетите тишината и спокойствието, които пленяват сетивата, за да Ви потопят в незабравимо преживяване сред комфорт и лукс за събуждане на жизнените сили и усещане за лекота.
+                А това е само малка част от всичко, което ние с щедро гостоприемство, много положителен заряд и щипка любов сме подготвили за Вас! Добре дошли в нашата петзвездна приказка!</description>
+            <starsCategory>*****</starsCategory>
+            <telephone>0879 066 660</telephone>
+            <email>info@artehotel.bg</email>
+            <image href="hotelArte"/>
+        </hotel>
+        <hotel id="hotel_7" regionId="r4">
+            <name>Royal spa Velingrad</name>
+            <description>Роял Спа Велинград е най-новият 4 звезден хотел в гр. Велинград. Създаден е с изискан дизайн и разполага със стандартни, луксозни стаи и апартаменти. На разположение на всеки гост е уютен лоби бар, ресторант, пура бар, лятна градина, фризьорски и козметичен салон, магазин, конферентна зала, игрален салон, билярдна зала, детски кът и електронни игри за деца. Хотелът предлага най-големия и модерен Спа център в България, както и фитнес с най-висок клас оборудване.
+                Спа център (4000 кв.м.): детски басейни, шокови басейни, термални външни басейни, голям вътрешен басейн, голям външен басейн и три джакузита, финландска сауна, хималайска сауна, инфрачервена сауна, панорамна сауна, аромо парна баня, панорамна парна баня, хамам, римска баня, руска баня, лакониум, масажни студия, релакс зона и термо зона.</description>
+            <starsCategory>****</starsCategory>
+            <telephone>0700 12 255</telephone>
+            <email>royalspa@abv.bg</email>
+            <image href="hotelRoyal"/>
+        </hotel>
+        
     </hotels>
 </catalog>

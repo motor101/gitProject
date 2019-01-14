@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="hotelsCatalog.xsl"?>
+
+<!DOCTYPE catalog SYSTEM "hotelsCatalog.dtd" [
+    <!ENTITY h1 SYSTEM "images/.jpg" NDATA jpg>
+    <!ENTITY h2 SYSTEM "images/.jpg" NDATA jpg>
+    <!ENTITY h3 SYSTEM "images/.jpg" NDATA jpg>
+    <!ENTITY h4 SYSTEM "images/.jpg" NDATA jpg>
+    <!ENTITY h5 SYSTEM "images/.jpg" NDATA jpg>
+    <!ENTITY h6 SYSTEM "images/.jpg" NDATA jpg>
+    <!ENTITY h7 SYSTEM "images/.jpg" NDATA jpg>
+    <!ENTITY h8 SYSTEM "images/.jpg" NDATA jpg>
+]>
+
+<catalog>
+    <reg:regions xmlns:reg="http://hotel.catalog.com/regions">
+        <reg:region id="region_1">
+            <reg:name></reg:name>
+        </reg:region>
+    </reg:regions>
+    <hotels>
+        <hotel id="hotel_1" regionId="region_1">
+            <name></name>
+            <description></description>
+            <starsCategory></starsCategory>
+            <telephone></telephone>
+            <email></email>
+            <image href="h1"/>
+        </hotel>
+    </hotels>
+</catalog>

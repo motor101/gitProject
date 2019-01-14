@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!ELEMENT catalog (reg:regions, hotels)>
+<!ELEMENT reg:regions (reg:region+)>
+<!ELEMENT reg:region (reg:name)>
+<!ELEMENT reg:name (#PCDATA)>
+<!ELEMENT hotels (hotel+)>
+<!ELEMENT hotel (name, description, starsCategory, telephone, email, image)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT starsCategory (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT image EMPTY>
+
+<!ATTLIST reg:regions xmlns:reg CDATA #REQUIRED>
+<!ATTLIST reg:region id ID #REQUIRED>
+<!ATTLIST hotel id ID #REQUIRED>
+<!ATTLIST hotel regionId IDREF #REQUIRED>
+<!ATTLIST image href ENTITY #REQUIRED>
+<!NOTATION jpg PUBLIC "jpg viewer">
+
+
